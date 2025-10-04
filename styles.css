@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+ 
+
+header, footer {
+  text-align: center;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #444;
+}
+
+/* ===== Menu (Centered Buttons) ===== */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+/* ===== Chanel Style Buttons ===== */
+.menu-btn {
+  display: inline-block;
+  background-color: #000;         
+  color: #fff;                   
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  border: 2px solid #000;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menu-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  transform: translateY(-2px);
+}
+
+.menu-btn:active {
+  transform: scale(0.97);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #555;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+/* ===== Add subtle luxury accent ===== */
+header::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #d4af37; /* gold line */
+  margin: 1rem auto 0;
+}
+
+
+
+
+
+
+/* ===== Task 0 — Responsive Typography ===== */
+
+body {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Tablet (≥576px) */
+@media (min-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop (≥992px) */
+@media (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ===== Task 1 — Responsive Layout ===== */
+
+.layout-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: min(1100px, 100% - 2rem);
+  margin: 2rem auto;
+}
+
+.box {
+  background: #000;
+  color: #fff;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Tablet ≥ 576px → 2 колонки */
+@media (min-width: 576px) {
+  .layout-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop ≥ 992px → 3 колонки */
+@media (min-width: 992px) {
+  .layout-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Task 4 — Responsive Portfolio (Chanel Style) ===== */
+.navbar-dark .navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-brand span {
+  color: #d4af37;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #d4af37;
+}
+
+/* Burger button */
+.navbar-toggler {
+  border-color: #d4af37;
+}
+
+.navbar-toggler-icon {
+  filter: invert(80%) sepia(60%) saturate(500%) hue-rotate(15deg) brightness(100%);
+}
+
+
+
+/* ===== Portfolio layout ===== */
+.portfolio h2 {
+  text-transform: uppercase;
+  margin: 2rem 0 1rem;
+  letter-spacing: 1px;
+}
+
+.project-card {
+  background: #000;
+  color: #fff;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.sidebar .info-box {
+  background: #000;
+  color: #fff;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* ===== Footer ===== */
+.footer-chanel {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
+  color: #555;
+}
+
+/* ===== Responsive typography ===== */
+@media (max-width: 575px) {
+  body { font-size: 14px; }
+  h2 { font-size: 1.3rem; }
+  .nav-links { flex-direction: column; gap: 0.5rem; }
+  .navbar-chanel .container { flex-direction: column; }
+}
+
+
+/* ===== Fix text colors in Portfolio cards ===== */
+.project-card,
+.sidebar .info-box {
+  color: #fff; /* make all text inside white */
+}
+
+.sidebar .info-box p {
+  color: #ffffff !important; /* чисто белый текст */
+  font-weight: 500;
+}
+
+
+.project-card h3 {
+  color: #d4af37; /* keep golden titles for contrast */
+}
+
+.sidebar .info-box strong {
+  color: #d4af37 !important; /* золотой акцент для названий */
+  font-weight: 600;
+}
+
+/* ===== Make project card text bright white ===== */
+.project-card p {
+  color: #ffffff !important; /* делаем основной текст белым */
+}
+
+.project-card h3 {
+  color: #d4af37 !important; /* золотой заголовок */
+}
+ы
+
+
+/* ===== Text Wrapping Fix ===== */
+
+body, main, section, p, h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word;        /* переносит слова, если они слишком длинные */
+  overflow-wrap: break-word;    /* поддержка новых браузеров */
+  white-space: normal;          /* текст переносится естественно */
+  max-width: 100%;              /* текст не вылезает за экран */
+}
